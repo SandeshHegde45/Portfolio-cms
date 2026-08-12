@@ -6,16 +6,15 @@
     "bio": "I’m a Full Stack Developer passionate about building scalable, high-performance, and user-focused web applications. I specialize in transforming ideas into seamless digital experiences by working across both frontend and backend technologies, with a strong focus on clean architecture, responsive design, robust APIs, and reliable solutions. I enjoy solving complex problems, learning modern technologies, and creating products that are not only functional but also intuitive and impactful.",
     "location": "Bengaluru, India",
     "availability": "Open to opportunities",
-    "avatarUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpAJ5XyKpsHf2pobMJRb6m5vTNEFKwy1ulwLdki2YaBmca9HRdtWvIC3s&s=10",
-    "yearsOfExperience": 1
+    "avatarUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3RQX61C1Szsgl3WoixdVGzffR5S0QEUaJ6JUervta1w&s=10",
+    "yearsOfExperience": 1.5
   },
   "contact": {
     "email": "sandesh.hegde555@gmail.com",
     "phone": "+91 9876542310",
-    "github": "https://github.com/your-handle",
-    "linkedin": "https://linkedin.com/in/your-handle",
-    "twitter": "https://twitter.com/your-handle",
-    "resumeUrl": "/resume-placeholder.txt"
+    "github": "https://github.com/SandeshHegde45",
+    "linkedin": "https://linkedin.com/in/sandesh-hegde-7a1300425",
+    "resumeUrl": "/SANDESH HEGDE Resume.pdf"
   },
   "skills": [
     {
@@ -53,60 +52,63 @@
       "category": "Tools",
       "name": "Git & GitHub",
       "level": 82
+    },
+    {
+      "id": "skl-7",
+      "category": "Database",
+      "name": "MongoDB",
+      "level": 85
+    },
+    {
+      "id": "skl-8",
+      "category": "Database",
+      "name": "PostgreSQL",
+      "level": 70
     }
   ],
   "projects": [
     {
       "id": "prj-1",
-      "title": "Placeholder Project One",
-      "description": "A short summary of what this project does, the problem it solves, and the role you played in building it.",
-      "imageUrl": "https://picsum.photos/seed/project-one/800/600",
+      "title": "Tech Blog website using MERN",
+      "description": "This website is developed to publish tech related updates for tech lovers",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9KCfO1koOC9LcPXdCA04K4yGC5FP3OV5R89LwTfdmm-y7fwWB0o5pnfIi&s=10",
       "tags": [
-        "Next.js",
+        "React.js",
         "Tailwind",
-        "GSAP"
+        "Flowbite-react",
+        "Redux toolkit",
+        "Express.js"
       ],
-      "liveUrl": "https://example.com",
-      "githubUrl": "https://github.com/your-handle/project-one",
+      "liveUrl": "https://blog-apqy.onrender.com",
+      "githubUrl": "https://github.com/SandeshHegde45/MERN-Blog",
       "featured": true
     },
     {
       "id": "prj-2",
-      "title": "Placeholder Project Two",
-      "description": "A short summary of what this project does, the problem it solves, and the role you played in building it.",
+      "title": "Sift and Simmer",
+      "description": "A small Indian vegetarian recipe browser.",
       "imageUrl": "https://picsum.photos/seed/project-two/800/600",
       "tags": [
         "React",
-        "Node.js"
+        "Tailwind",
+        "Supabase",
+        "Redux toolkit"
       ],
-      "liveUrl": "https://example.com",
-      "githubUrl": "https://github.com/your-handle/project-two",
+      "liveUrl": "sift-and-simmer-hackathon.vercel.app",
+      "githubUrl": "https://github.com/SandeshHegde45/Sift-and-Simmer-Hackathon",
       "featured": true
-    },
-    {
-      "id": "prj-3",
-      "title": "Placeholder Project Three",
-      "description": "A short summary of what this project does, the problem it solves, and the role you played in building it.",
-      "imageUrl": "https://picsum.photos/seed/project-three/800/600",
-      "tags": [
-        "JavaScript",
-        "API"
-      ],
-      "liveUrl": "https://example.com",
-      "githubUrl": "https://github.com/your-handle/project-three",
-      "featured": false
     }
   ],
   "experience": [
     {
       "id": "exp-1",
       "role": "Software Developer",
-      "company": "Placeholder Company",
+      "company": "NSP",
       "location": "Remote",
-      "startDate": "2024-06",
-      "endDate": "",
-      "current": true,
-      "description": "Describe your responsibilities and impact in this role. Focus on outcomes, not just tasks."
+      "startDate": "2024-05",
+      "endDate": "2024-12",
+      "current": false,
+      "description": "Worked as a Associate software developer. Worked on frontend creations"
     }
   ],
   "education": [
@@ -116,24 +118,16 @@
       "degree": "Master of Computer application",
       "startDate": "2020-08",
       "endDate": "2022-08",
-      "description": ""
+      "description": "This course provided complete knowledge on programming, system basic and so many other subjects"
     }
   ],
   "achievements": [
     {
       "id": "ach-1",
-      "title": "Placeholder Achievement",
-      "issuer": "Issuing Organization",
-      "date": "2025-03",
-      "description": "A short line about why this achievement mattered.",
-      "url": ""
-    },
-    {
-      "id": "ach-2",
-      "title": "Another Achievement",
-      "issuer": "Issuing Organization",
-      "date": "2024-11",
-      "description": "A short line about why this achievement mattered.",
+      "title": "Secured 2nd rank in MCA",
+      "issuer": "NMIT",
+      "date": "2022-11",
+      "description": "Got medal of hounours at the occasion of graduation day",
       "url": ""
     }
   ]
