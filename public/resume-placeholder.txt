@@ -1,0 +1,3 @@
+This is a placeholder resume file.
+Replace public/resume-placeholder.txt with your actual resume PDF,
+then update contact.resumeUrl in the CMS to point to it.
