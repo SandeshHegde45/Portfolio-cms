@@ -3,15 +3,15 @@
     "name": "Sandesh Hegde",
     "title": "Full-Stack Developer",
     "tagline": "Building fast, thoughtful interfaces for the web.",
-    "bio": "I’m a Full Stack Developer passionate about building scalable, high-performance, and user-focused web applications. I specialize in transforming ideas into seamless digital experiences by working across both frontend and backend technologies, with a strong focus on clean architecture, responsive design, robust APIs, and reliable solutions. I enjoy solving complex problems, learning modern technologies, and creating products that are not only functional but also intuitive and impactful.",
+    "bio": "I’m a Full Stack Developer passionate about building scalable, high-performance, and user-focused web applications. I specialize in transforming ideas into seamless digital experiences by working across both frontend and backend technologies, responsive design, robust APIs, and reliable solutions.",
     "location": "Bengaluru, India",
     "availability": "Open to opportunities",
-    "avatarUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3RQX61C1Szsgl3WoixdVGzffR5S0QEUaJ6JUervta1w&s=10",
+    "avatarUrl": "https://i.pravatar.cc/480?img=12",
     "yearsOfExperience": 1.5
   },
   "contact": {
     "email": "sandesh.hegde555@gmail.com",
-    "phone": "+91 9876542310",
+    "phone": "+91 8762712396",
     "github": "https://github.com/SandeshHegde45",
     "linkedin": "https://linkedin.com/in/sandesh-hegde-7a1300425",
     "resumeUrl": "/SANDESH HEGDE Resume.pdf"
@@ -71,7 +71,7 @@
       "id": "prj-1",
       "title": "Tech Blog website using MERN",
       "description": "This website is developed to publish tech related updates for tech lovers",
-      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9KCfO1koOC9LcPXdCA04K4yGC5FP3OV5R89LwTfdmm-y7fwWB0o5pnfIi&s=10",
+      "imageUrl": "https://picsum.photos/seed/project-one/800/600",
       "tags": [
         "React.js",
         "Tailwind",
