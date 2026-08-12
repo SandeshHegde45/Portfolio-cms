@@ -1,0 +1,140 @@
+{
+  "profile": {
+    "name": "Sandesh Hegde",
+    "title": "Full-Stack Developer",
+    "tagline": "Building fast, thoughtful interfaces for the web.",
+    "bio": "I’m a Full Stack Developer passionate about building scalable, high-performance, and user-focused web applications. I specialize in transforming ideas into seamless digital experiences by working across both frontend and backend technologies, with a strong focus on clean architecture, responsive design, robust APIs, and reliable solutions. I enjoy solving complex problems, learning modern technologies, and creating products that are not only functional but also intuitive and impactful.",
+    "location": "Bengaluru, India",
+    "availability": "Open to opportunities",
+    "avatarUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpAJ5XyKpsHf2pobMJRb6m5vTNEFKwy1ulwLdki2YaBmca9HRdtWvIC3s&s=10",
+    "yearsOfExperience": 1
+  },
+  "contact": {
+    "email": "sandesh.hegde555@gmail.com",
+    "phone": "+91 9876542310",
+    "github": "https://github.com/your-handle",
+    "linkedin": "https://linkedin.com/in/your-handle",
+    "twitter": "https://twitter.com/your-handle",
+    "resumeUrl": "/resume-placeholder.txt"
+  },
+  "skills": [
+    {
+      "id": "skl-1",
+      "category": "Languages",
+      "name": "JavaScript",
+      "level": 85
+    },
+    {
+      "id": "skl-2",
+      "category": "Languages",
+      "name": "TypeScript",
+      "level": 65
+    },
+    {
+      "id": "skl-3",
+      "category": "Frameworks",
+      "name": "React",
+      "level": 88
+    },
+    {
+      "id": "skl-4",
+      "category": "Frameworks",
+      "name": "Next.js",
+      "level": 80
+    },
+    {
+      "id": "skl-5",
+      "category": "Styling",
+      "name": "Tailwind CSS",
+      "level": 90
+    },
+    {
+      "id": "skl-6",
+      "category": "Tools",
+      "name": "Git & GitHub",
+      "level": 82
+    }
+  ],
+  "projects": [
+    {
+      "id": "prj-1",
+      "title": "Placeholder Project One",
+      "description": "A short summary of what this project does, the problem it solves, and the role you played in building it.",
+      "imageUrl": "https://picsum.photos/seed/project-one/800/600",
+      "tags": [
+        "Next.js",
+        "Tailwind",
+        "GSAP"
+      ],
+      "liveUrl": "https://example.com",
+      "githubUrl": "https://github.com/your-handle/project-one",
+      "featured": true
+    },
+    {
+      "id": "prj-2",
+      "title": "Placeholder Project Two",
+      "description": "A short summary of what this project does, the problem it solves, and the role you played in building it.",
+      "imageUrl": "https://picsum.photos/seed/project-two/800/600",
+      "tags": [
+        "React",
+        "Node.js"
+      ],
+      "liveUrl": "https://example.com",
+      "githubUrl": "https://github.com/your-handle/project-two",
+      "featured": true
+    },
+    {
+      "id": "prj-3",
+      "title": "Placeholder Project Three",
+      "description": "A short summary of what this project does, the problem it solves, and the role you played in building it.",
+      "imageUrl": "https://picsum.photos/seed/project-three/800/600",
+      "tags": [
+        "JavaScript",
+        "API"
+      ],
+      "liveUrl": "https://example.com",
+      "githubUrl": "https://github.com/your-handle/project-three",
+      "featured": false
+    }
+  ],
+  "experience": [
+    {
+      "id": "exp-1",
+      "role": "Software Developer",
+      "company": "Placeholder Company",
+      "location": "Remote",
+      "startDate": "2024-06",
+      "endDate": "",
+      "current": true,
+      "description": "Describe your responsibilities and impact in this role. Focus on outcomes, not just tasks."
+    }
+  ],
+  "education": [
+    {
+      "id": "edu-1",
+      "institution": "Nitte Meenakshi Institute of Technologies, Bengaluru",
+      "degree": "Master of Computer application",
+      "startDate": "2020-08",
+      "endDate": "2022-08",
+      "description": ""
+    }
+  ],
+  "achievements": [
+    {
+      "id": "ach-1",
+      "title": "Placeholder Achievement",
+      "issuer": "Issuing Organization",
+      "date": "2025-03",
+      "description": "A short line about why this achievement mattered.",
+      "url": ""
+    },
+    {
+      "id": "ach-2",
+      "title": "Another Achievement",
+      "issuer": "Issuing Organization",
+      "date": "2024-11",
+      "description": "A short line about why this achievement mattered.",
+      "url": ""
+    }
+  ]
+}
