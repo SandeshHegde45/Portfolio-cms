@@ -31,11 +31,12 @@ export function AdminDashboard({ initialContent }) {
       body: JSON.stringify({ section: sectionKey, value: sectionValue })
     });
 
+    const data = await response.json();
+
     if (!response.ok) {
-      throw new Error("Failed to save section");
+      throw new Error(data?.message || "Failed to save section");
     }
 
-    const data = await response.json();
     setContent(data.content);
   };
 
