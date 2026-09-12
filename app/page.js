@@ -11,6 +11,8 @@ import { EducationSection } from "@/components/sections/EducationSection";
 import { AchievementsSection } from "@/components/sections/AchievementsSection";
 import { ContactSection } from "@/components/sections/ContactSection";
 
+export const dynamic = "force-dynamic";
+
 export default async function HomePage() {
   const content = await readContent();
 
