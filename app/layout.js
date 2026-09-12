@@ -43,7 +43,7 @@ const themeInitScript = `
 })();
 `;
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children, modal }) {
   return (
     <html
       lang="en"
@@ -51,7 +51,10 @@ export default function RootLayout({ children }) {
     >
       <body className="bg-ink-900 font-body text-ink-100 antialiased">
         <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
-        <ThemeProvider>{children}</ThemeProvider>
+        <ThemeProvider>
+          {children}
+          {modal}
+        </ThemeProvider>
       </body>
     </html>
   );
