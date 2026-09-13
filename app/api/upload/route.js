@@ -1,7 +1,10 @@
 import { put } from "@vercel/blob";
 import { cookies } from "next/headers";
 import { NextResponse } from "next/server";
-import { ADMIN_SESSION_COOKIE, getExpectedSessionValue } from "@/lib/auth/session";
+import {
+  ADMIN_SESSION_COOKIE,
+  getExpectedSessionValue,
+} from "@/lib/auth/session";
 
 export const dynamic = "force-dynamic";
 
@@ -20,7 +23,10 @@ const contentTypesByExtension = {
 export async function POST(request) {
   const sessionCookie = cookies().get(ADMIN_SESSION_COOKIE);
   if (sessionCookie?.value !== getExpectedSessionValue()) {
-    return NextResponse.json({ success: false, message: "Not authenticated." }, { status: 401 });
+    return NextResponse.json(
+      { success: false, message: "Not authenticated." },
+      { status: 401 },
+    );
   }
 
   let formData;
@@ -28,7 +34,10 @@ export async function POST(request) {
     formData = await request.formData();
   } catch (error) {
     return NextResponse.json(
-      { success: false, message: "The upload must be sent as multipart form data." },
+      {
+        success: false,
+        message: "The upload must be sent as multipart form data.",
+      },
       { status: 400 },
     );
   }
@@ -36,12 +45,17 @@ export async function POST(request) {
   const file = formData.get("file");
 
   if (!file || typeof file.arrayBuffer !== "function") {
-    return NextResponse.json({ success: false, message: "Choose a file to upload." }, { status: 400 });
+    return NextResponse.json(
+      { success: false, message: "Choose a file to upload." },
+      { status: 400 },
+    );
   }
 
   const extension = file.name?.split(".").pop()?.toLowerCase();
   const contentType =
-    contentTypesByExtension[extension] || file.type || "application/octet-stream";
+    contentTypesByExtension[extension] ||
+    file.type ||
+    "application/octet-stream";
   const isDocument = [
     "application/pdf",
     "application/msword",
@@ -49,20 +63,30 @@ export async function POST(request) {
   ].includes(contentType);
 
   if (!contentType.startsWith("image/") && !isDocument) {
-    return NextResponse.json({ success: false, message: "Only images and PDF files are supported." }, { status: 400 });
+    return NextResponse.json(
+      { success: false, message: "Only images and PDF files are supported." },
+      { status: 400 },
+    );
   }
 
   if (file.size > 10 * 1024 * 1024) {
-    return NextResponse.json({ success: false, message: "Files must be 10 MB or smaller." }, { status: 400 });
+    return NextResponse.json(
+      { success: false, message: "Files must be 10 MB or smaller." },
+      { status: 400 },
+    );
   }
 
   try {
     const safeName = file.name.replace(/[^a-zA-Z0-9._-]/g, "-");
-    const blob = await put(`portfolio/uploads/${Date.now()}-${safeName}`, file, {
-      access: "public",
-      addRandomSuffix: true,
-      contentType,
-    });
+    const blob = await put(
+      `portfolio/uploads/${Date.now()}-${safeName}`,
+      file,
+      {
+        access: "public",
+        addRandomSuffix: true,
+        contentType,
+      },
+    );
     return NextResponse.json({ success: true, url: blob.url });
   } catch (error) {
     return NextResponse.json(
