@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { AdminTextField } from "@/components/admin/AdminTextField";
 
-export function AdminMediaField({ label, accept, value, onChange, ...rest }) {
+export function AdminMediaField({ label, accept, onChange, ...rest }) {
   const [status, setStatus] = useState("idle");
 
   const handleFileChange = async (event) => {
@@ -18,7 +18,7 @@ export function AdminMediaField({ label, accept, value, onChange, ...rest }) {
       const response = await fetch("/api/upload", { method: "POST", body: formData });
       const data = await response.json();
       if (!response.ok) throw new Error(data?.message || "Upload failed.");
-      onChange({ target: { value: data.url } });
+      onChange({ target: { name: rest.name, value: data.url } });
       setStatus("uploaded");
     } catch (error) {
       setStatus(error.message || "Upload failed.");
@@ -29,7 +29,7 @@ export function AdminMediaField({ label, accept, value, onChange, ...rest }) {
 
   return (
     <div className="flex flex-col gap-2">
-      <AdminTextField label={label} value={value || ""} onChange={onChange} {...rest} />
+      <AdminTextField label={label} onChange={onChange} {...rest} />
       <label className="font-mono text-xs uppercase tracking-wide text-ink-400">
         Upload file
         <input

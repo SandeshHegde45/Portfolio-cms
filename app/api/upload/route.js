@@ -82,12 +82,16 @@ export async function POST(request) {
       `portfolio/uploads/${Date.now()}-${safeName}`,
       file,
       {
-        access: "public",
+        access: "private",
         addRandomSuffix: true,
         contentType,
       },
     );
-    return NextResponse.json({ success: true, url: blob.url });
+    const pathname = new URL(blob.url).pathname.slice(1);
+    return NextResponse.json({
+      success: true,
+      url: `/api/media?pathname=${encodeURIComponent(pathname)}`,
+    });
   } catch (error) {
     return NextResponse.json(
       { success: false, message: error?.message || "Upload failed." },
