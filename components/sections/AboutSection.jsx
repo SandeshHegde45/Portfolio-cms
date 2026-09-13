@@ -26,7 +26,7 @@ export function AboutSection({ profile }) {
             <img
               src={profile.avatarUrl}
               alt={profile.name}
-              className="object-cover"
+              className="absolute inset-0 h-full w-full object-cover"
             />
           </div>
         </div>
