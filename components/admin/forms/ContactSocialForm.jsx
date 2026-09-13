@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { SectionCard } from "@/components/admin/SectionCard";
 import { AdminTextField } from "@/components/admin/AdminTextField";
+import { AdminMediaField } from "@/components/admin/AdminMediaField";
 import { AdminSaveBar } from "@/components/admin/AdminSaveBar";
 
 export function ContactSocialForm({ value, onSave }) {
@@ -48,7 +49,12 @@ export function ContactSocialForm({ value, onSave }) {
           <AdminTextField id="twitter" label="Twitter URL" {...register("twitter")} />
         </div>
 
-        <AdminTextField id="resumeUrl" label="Resume URL" {...register("resumeUrl")} />
+        <AdminMediaField
+          id="resumeUrl"
+          label="Resume URL"
+          accept="application/pdf,.doc,.docx"
+          {...register("resumeUrl")}
+        />
 
         <AdminSaveBar status={status} disabled={isSubmitting} />
       </form>

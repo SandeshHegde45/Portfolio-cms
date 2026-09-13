@@ -1,7 +1,7 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import { useRef } from "react";
-import Image from "next/image";
 import { ArrowUpRight, Github } from "lucide-react";
 import { useGSAP } from "@gsap/react";
 import { gsap } from "@/lib/gsap/gsapConfig";
@@ -38,12 +38,10 @@ export function ProjectCard({ project, index }) {
       className="project-card group flex flex-col overflow-hidden rounded-2xl border border-ink-600 bg-ink-800"
     >
       <div className="relative aspect-[4/3] w-full overflow-hidden border-b border-ink-600 bg-ink-700">
-        <Image
+        <img
           src={project.imageUrl}
           alt={project.title}
-          fill
-          sizes="(min-width: 1024px) 33vw, 100vw"
-          className="object-cover opacity-90 transition-transform duration-500 group-hover:scale-105"
+          className="absolute inset-0 h-full w-full object-cover opacity-90 transition-transform duration-500 group-hover:scale-105"
         />
         <span className="absolute left-4 top-4 rounded-full bg-ink-900/80 px-3 py-1 font-mono text-xs text-signal-400">
           PRJ-{String(index + 1).padStart(2, "0")}

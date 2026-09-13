@@ -1,7 +1,7 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import { useEffect, useRef } from "react";
-import Image from "next/image";
 import { X, ArrowUpRight, Github, ArrowRight } from "lucide-react";
 import { useModalAnimation } from "@/lib/hooks/useModalAnimation";
 import { useHoverAnimation } from "@/lib/hooks/useHoverAnimation";
@@ -60,13 +60,10 @@ export function ProjectPreviewModal({ project, index }) {
         </button>
 
         <div className="relative aspect-[21/9] w-full overflow-hidden border-b border-ink-600 bg-ink-700">
-          <Image
+          <img
             src={project.imageUrl}
             alt={project.title}
-            fill
-            priority
-            sizes="(min-width: 1024px) 896px, 100vw"
-            className="object-cover"
+            className="absolute inset-0 h-full w-full object-cover"
           />
           <span className="absolute left-5 top-5 rounded-full bg-ink-900/80 px-3 py-1 font-mono text-xs text-signal-400">
             PRJ-{String(index + 1).padStart(2, "0")}

@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useForm, useFieldArray } from "react-hook-form";
 import { SectionCard } from "@/components/admin/SectionCard";
 import { AdminTextField } from "@/components/admin/AdminTextField";
+import { AdminMediaField } from "@/components/admin/AdminMediaField";
 import { AdminSaveBar } from "@/components/admin/AdminSaveBar";
 import { AdminRepeatableList, AdminRepeatableItem } from "@/components/admin/AdminRepeatableList";
 import { generateId } from "@/lib/utils/generateId";
@@ -67,9 +68,10 @@ export function ProjectsForm({ value, onSave }) {
                 label="Title"
                 {...register(`projects.${index}.title`)}
               />
-              <AdminTextField
+              <AdminMediaField
                 id={`projects.${index}.imageUrl`}
                 label="Image URL"
+                accept="image/*"
                 {...register(`projects.${index}.imageUrl`)}
               />
               <AdminTextField

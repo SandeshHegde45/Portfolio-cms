@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { SectionCard } from "@/components/admin/SectionCard";
 import { AdminTextField } from "@/components/admin/AdminTextField";
+import { AdminMediaField } from "@/components/admin/AdminMediaField";
 import { AdminSaveBar } from "@/components/admin/AdminSaveBar";
 
 export function PersonalInfoForm({ value, onSave }) {
@@ -70,7 +71,12 @@ export function PersonalInfoForm({ value, onSave }) {
           />
         </div>
 
-        <AdminTextField id="avatarUrl" label="Avatar image URL" {...register("avatarUrl")} />
+        <AdminMediaField
+          id="avatarUrl"
+          label="Avatar image URL"
+          accept="image/*"
+          {...register("avatarUrl")}
+        />
 
         <AdminSaveBar status={status} disabled={isSubmitting} />
       </form>

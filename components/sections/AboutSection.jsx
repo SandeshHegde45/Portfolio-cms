@@ -1,7 +1,7 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import { useRef } from "react";
-import Image from "next/image";
 import { useRevealOnScroll } from "@/lib/hooks/useRevealOnScroll";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
@@ -23,11 +23,9 @@ export function AboutSection({ profile }) {
           </div>
 
           <div className="about-reveal relative aspect-square w-full max-w-xs overflow-hidden rounded-2xl border border-ink-600 bg-ink-800 lg:justify-self-end">
-            <Image
+            <img
               src={profile.avatarUrl}
               alt={profile.name}
-              fill
-              sizes="320px"
               className="object-cover"
             />
           </div>
